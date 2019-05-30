@@ -262,11 +262,13 @@ plt.savefig("entropy.png")
     - \scriptsize Can find the variance of the \beta in the "bootstraps", which
       acts as an estimate of the variance of the parameter
     - when finding e.g. \beta for logistic regression, we don't see
-      how "important" the various variables are
+      how "important" the various variables are. With this, we can see
+      if they are significantly away from 0
   - Momentum in SGD: add a momentum parameter in gradient descent
   - Simple SVM (support vector machine): take multiple logisitic
     regression-like analysis and add additional variables derived from
     the input, run over the extended dataset
-    - \scriptsize E.g. if one input x, create the dataset \((x, x^2)\) and run a
-      multiple logistic regression over the \((x, x^2)\) dataset
+    - \scriptsize E.g. if one input x, create the dataset \((x, x^2)\)
+      and run a multiple logistic regression over the \((x, x^2)\)
+      dataset. Can you come up with a dataset that would benefit?
   - Simple CNN (ambitious?): create a simple CNN filter for MNIST
