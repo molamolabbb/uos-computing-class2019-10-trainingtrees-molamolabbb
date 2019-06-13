@@ -104,6 +104,7 @@ if __name__ == "__main__":
     for d,i in zip(data,label):
         d = tuple(d)
         datas.append(((d),i))
-    tree = build_tree_id3(datas,10)   
-    tree_accuracy(tree,data,label)
-    print(tree_accuracy(tree,data,label))
+    for i in range(10):
+        tree = build_tree_id3(datas,i)   
+        tree_accuracy(tree,data,label)
+        print(tree_accuracy(tree,data,label))
